@@ -1,6 +1,6 @@
 # simple dockerfile to test OCP s2i using Dockerfile 
 
-FROM --platform=linux/amd64 quay.io/dpkshetty/pyflask:v1
+FROM registry.access.redhat.com/ubi7:latest
 
 # CMD ["/bin/bash", "-c", "sleep infinity"]
-# CMD ["/bin/bash", "-c", "--", "while true; do sleep 30; done;"]
+CMD ["/bin/bash", "-c", "--", "while true; do sleep 30; done;"]
